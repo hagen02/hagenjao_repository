@@ -1,2 +1,2 @@
 # hagenjao_repository
-Repository for Schools Requirements
+Repository for School Requirements
