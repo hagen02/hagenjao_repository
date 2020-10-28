@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>All Products - Lazapee</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <img src="image/logo.png" width="90px">
+        </div>
+        <pre>  Lazapee</pre>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="image/cart.png" width="30px" height="30px"></a>
+        <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    </div>
+<!------ cart items details ------>
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>        <!------ table row ------>
+                <td>    <!------ table data ------>
+                    <div class="cart-info">
+                        <a href="product-details-msi-b550m.html"><img src="image/MSI%20B550M%20Bazooka%201.png"></a>
+                        <div>
+                            <p>MSI MAG B550M BAZOOKA | AM4 AMD B550 | Micro ATX Motherboard</p>
+                            <small>Price: &#8369;6,900</small>
+                            <br>
+    
+                        </div>
+                    </div>
+                </td>
+                
+                <td><input type="number" id="textMSI" value="0" min="0" onkeyup="functionMSI()" onclick="functionMSI()"></td>
+                <td id="stMSI">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function functionMSI() {
+                        var test1=document.getElementById("textMSI").value;
+                        test1 *=6900;
+
+                        document.getElementById("stMSI").innerHTML = test1;
+                    }
+                </script>
+
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-silverstone-psu.html"><img src="image/silverstone%20650w%201.jpg"></a>
+                        <div>
+                            <p>SilverStone Strider S Gold ST65F-G | 650W | 80 PLUS Gold | 100% Modular</p>
+                            <small>Price: &#8369;4,500</small>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" id="textPSU" value="0" min="0" onkeyup="functionPSU()" onclick="functionPSU()"></td>
+                <td id="stPSU">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function functionPSU() {
+                        var test1=document.getElementById("textPSU").value;
+                        test1 *=4500;
+
+                        document.getElementById("stPSU").innerHTML = test1;
+                    }
+                </script>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-ryzen-9.html"><img src="image/3900x%201.png"></a>
+                        <div>
+                            <p>AMD Ryzen 9 3900X | 12-Core/24-Thread | Max Boost Clock: 4.6 GHz | Socket AM4 105W</p>
+                            <small>Price: &#8369;24,500</small>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" id="textR9" value="0" min="0" onkeyup="functionR9()" onclick="functionR9()"></td>
+                <td id="stR9">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function functionR9() {
+                        var test1=document.getElementById("textR9").value;
+                        test1 *=24500;
+
+                        document.getElementById("stR9").innerHTML = test1;
+                    }
+                </script>
+            </tr>
+            <tr>        <!------ table row ------>
+                <td>    <!------ table data ------>
+                    <div class="cart-info">
+                        <a href="product-details-silverstone-aio.html"><img src="image/silver%20tundra%201.png"></a>
+                        <div>
+                            <p>SilverStone Tundra SST-TD02-E | 2X120mm | All-in-One CPU Liquid Cooler</p>
+                            <small>Price: &#8369;4,500</small>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                
+                <td><input type="number" id="textAIO" value="0" min="0" onkeyup="functionAIO()" onclick="functionAIO()"></td>
+                <td id="stAIO">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function functionAIO() {
+                        var test1=document.getElementById("textAIO").value;
+                        test1 *=4500;
+
+                        document.getElementById("stAIO").innerHTML =  test1;
+                    }
+                </script>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-corsair-vengeance.html"><img src="image/vengeance%201.png"></a>
+                        <div>
+                            <p>Corsair VENGEANCE® LPX | 16GB (2 x 8GB) DDR4 DRAM | 3000MHz C15 Memory Kit - Black</p>
+                            <small>Price: &#8369;3,055</small>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" id="textRAM" value="0" min="0" onkeyup="functionRAM()" onclick="functionRAM()"></td>
+                <td id="stRAM">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function functionRAM() {
+                        var test1=document.getElementById("textRAM").value;
+                        test1 *=3055;
+
+                        document.getElementById("stRAM").innerHTML = test1;
+                    }
+                </script>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-cm-masterair.html"><img src="image/masterair%202.png"></a>
+                        <div>
+                            <p>MASTERAIR G100M | RGB Ring | Low Profile | Wired RGB Controller</p>
+                            <small>Price: &#8369;3,500</small>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" id="textCM" value="0" min="0" onkeyup="functionCM()" onclick="functionCM()"></td>
+                <td id="stCM">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function functionCM() {
+                        var test1=document.getElementById("textCM").value;
+                        test1 *=3500;
+
+                        document.getElementById("stCM").innerHTML = test1;
+                    }
+                </script>
+            </tr>
+            
+            <tr>        <!------ table row ------>
+                <td>    <!------ table data ------>
+                    <div class="cart-info">
+                        <a href="product-details-ryzen-7.html"><img src="image/3700x%201.png"></a>
+                        <div>
+                            <p>AMD Ryzen 7 3700X | 8-Core/16-Thread Max Boost Clock: 4.4 GHz | Socket AM4 65W</p>
+                            <small>Price: &#8369;18,400</small>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                
+                <td><input type="number" id="textR7" value="0" min="0" onkeyup="functionR7()" onclick="functionR7()"></td>
+                <td id="stR7">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function functionR7() {
+                        var test1=document.getElementById("textR7").value;
+                        test1 *=18400;
+
+                        document.getElementById("stR7").innerHTML = test1;
+                    }
+                </script>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-lenovo-s145.html"><img src="image/lenovo%20s145%201.png"></a>
+                        <div>
+                            <p>Lenovo Ideapad S145-14IWL | Ryzen 3500U | 4GB RAM | 512GB SSD</p>
+                            <small>Price: &#8369;24,995</small>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" id="textLenovo" value="0" min="0" onkeyup="functionLenovo()" onclick="functionLenovo()"></td>
+                <td id="stLenovo">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function functionLenovo() {
+                        var test1=document.getElementById("textLenovo").value;
+                        test1 *=24995;
+
+                        document.getElementById("stLenovo").innerHTML = test1;
+                    }
+                </script>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-2080s.html"><img src="image/2080s%201.png"></a>
+                        <div>
+                            <p>GEFORCE RTX 2080 SUPER | 1815 MHz Boost Clock | 8 GB GDDR6 | 15.5 Gbps</p>
+                            <small>Price: &#8369;23,545</small>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" id="text2080s" value="0" min="0" onkeyup="function2080s()" onclick="function2080s()"></td>
+                <td id="st2080s">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function function2080s() {
+                        var test1=document.getElementById("text2080s").value;
+                        test1 *=23545;
+
+                        document.getElementById("st2080s").innerHTML = test1;
+                    }
+                </script>
+            </tr>
+            
+            <tr>        <!------ table row ------>
+                <td>    <!------ table data ------>
+                    <div class="cart-info">
+                        <a href="product-details-ryzen-5.html"><img src="image/3600%201.png"></a>
+                        <div>
+                            <p>AMD Ryzen 5 3600 | 6-Core/12-Thread | Max Boost Clock: 4.2 GHz</p>
+                            <small>Price: &#8369;9,000</small>
+                            <br>
+
+                        </div>
+                    </div>
+                </td>
+                
+                <td><input type="number" id="textR5" value="0" min="0" onkeyup="functionR5()" onclick="functionR5()"></td>
+                <td id="stR5">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function functionR5() {
+                        var test1=document.getElementById("textR5").value;
+                        test1 *=9000;
+
+                        document.getElementById("stR5").innerHTML = test1;
+                    }
+                </script>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-zowie-s1.html"><img src="image/ben%20zowie%201.png"></a>
+                        <div>
+                            <p>ZOWIE S1 DIVINA | VERSION BLUE Mouse</p>
+                            <small>Price: &#8369;4,200</small>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" id="textZowie" value="0" min="0" onkeyup="functionZowie()" onclick="functionZowie()"></td>
+                <td id="stZowie">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function functionZowie() {
+                        var test1=document.getElementById("textZowie").value;
+                        test1 *=4200;
+
+                        document.getElementById("stZowie").innerHTML = test1;
+                    }
+                </script>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-wd-blue.html"><img src="image/wd%20blue%201.png"></a>
+                        <div>
+                            <p>WD Blue™ SN550 NVMe™ SSD | 500GB</p>
+                            <small>Price: &#8369;4,100</small>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" id="textWD" value="0" min="0" onkeyup="functionWD()" onclick="functionWD()"></td>
+                <td id="stWD">0</td> <!------ st = subtotal ------>
+                <td></td>
+                
+                <script>
+                    function functionWD() {
+                        var test2=document.getElementById("textWD").value;
+                        test2 *=4100;
+
+                        document.getElementById("stWD").innerHTML = test2;
+                    }
+                </script>
+            </tr>
+        </table>
+        
+        <div class="total-price"><!------ TOTAL PRICE ------>
+            <table>
+                <tr>
+                    
+                    <td><a onclick="functionTotal()" class="btn">Total</a></td>
+                    <script>
+                        function functionTotal() {
+                            var total1 = document.getElementById("stMSI").innerHTML;
+                            var total2 = document.getElementById("stPSU").innerHTML;
+                            var total3 = document.getElementById("stR9").innerHTML;
+                            var total4 = document.getElementById("stAIO").innerHTML;
+                            var total5 = document.getElementById("stR5").innerHTML;
+                            var total6 = document.getElementById("stRAM").innerHTML;
+                            var total7 = document.getElementById("stCM").innerHTML;
+                            var total8 = document.getElementById("stR7").innerHTML;
+                            var total9 = document.getElementById("stLenovo").innerHTML;
+                            var total10 = document.getElementById("st2080s").innerHTML;
+                            var total11 = document.getElementById("stZowie").innerHTML;
+                            var total12 = document.getElementById("stWD").innerHTML;
+                            
+                            var pointNum1 = parseFloat(total1);
+                            var pointNum2 = parseFloat(total2);
+                            var pointNum3 = parseFloat(total3);
+                            var pointNum4 = parseFloat(total4);
+                            var pointNum5 = parseFloat(total5);
+                            var pointNum6 = parseFloat(total6);
+                            var pointNum7 = parseFloat(total7);
+                            var pointNum8 = parseFloat(total8);
+                            var pointNum9 = parseFloat(total9);
+                            var pointNum10 = parseFloat(total10);
+                            var pointNum11 = parseFloat(total11);
+                            var pointNum12 = parseFloat(total12);
+                            
+                            var total = pointNum1 + pointNum2 + pointNum3 + pointNum4 + pointNum5 + pointNum6 + pointNum7 + pointNum8 + pointNum9 + pointNum10 + pointNum11 + pointNum12;
+                            document.getElementById("total").innerHTML = "&#8369;"+ total;
+                        }
+                        
+                    </script>
+                    <td id="total" onmouseover="functionTotal()">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<!------ footer ------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and IOS</p>
+                    <div class="app-logo">
+                        <img src="image/store_icon.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="image/logo.png">
+                    <p>Our mission is to sustainably make the pleasure of making information technology available to many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <a href="https://www.youtube.com/watch?v=7qk7d7MPFYE"><li>Coupons</li></a>
+                        <a href="https://www.youtube.com/watch?v=54qxpc1F_yE"><li>Blog Post</li></a>
+                        <a href="https://www.youtube.com/watch?v=uuKiqu3g_sE"><li>Return Policy</li></a>
+                        <a href="https://www.youtube.com/watch?v=a3WnvDtDD2M"><li>Join Affiliate</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <a href="https://www.youtube.com/watch?v=ozA0MT6SH54"><li>Facebook</li></a>
+                        <a href="https://www.youtube.com/watch?v=Ks5cWd5STT0"><li>Twitter</li></a>
+                        <a href="https://www.youtube.com/watch?v=ZA8OcknTkB0&feature=youtu.be"><li>Instagram</li></a>
+                        <a href="https://www.youtube.com/watch?v=QbeBhdjW1_w"><li>Youtube</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Lazapee</p>
+        </div>
+    </div>
+<!------ js for toggle menu ------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>  
+
+</body>
+    
+</html>
